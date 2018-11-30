@@ -17,9 +17,7 @@ ADD gunicorn.conf.py /webvirtmgr/conf/gunicorn.conf.py
 
 ADD bootstrap.sh /webvirtmgr/bootstrap.sh
 
-RUN /webvirtmgr/bootstrap.sh
-
-RUN yum clean
+RUN yum clean all
 
 EXPOSE 8080
 EXPOSE 6080
